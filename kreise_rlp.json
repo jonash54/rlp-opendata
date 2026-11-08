@@ -1,0 +1,218 @@
+[
+ {
+  "ags": "07111",
+  "typ": "Kreisfreie Stadt",
+  "name": "Koblenz, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07131",
+  "typ": "Landkreis",
+  "name": "Ahrweiler",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07132",
+  "typ": "Landkreis",
+  "name": "Altenkirchen (Westerwald)",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07133",
+  "typ": "Landkreis",
+  "name": "Bad Kreuznach",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07134",
+  "typ": "Landkreis",
+  "name": "Birkenfeld",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07135",
+  "typ": "Landkreis",
+  "name": "Cochem-Zell",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07137",
+  "typ": "Landkreis",
+  "name": "Mayen-Koblenz",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07138",
+  "typ": "Landkreis",
+  "name": "Neuwied",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07140",
+  "typ": "Landkreis",
+  "name": "Rhein-Hunsrück-Kreis",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07141",
+  "typ": "Landkreis",
+  "name": "Rhein-Lahn-Kreis",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07143",
+  "typ": "Landkreis",
+  "name": "Westerwaldkreis",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07211",
+  "typ": "Kreisfreie Stadt",
+  "name": "Trier, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07231",
+  "typ": "Landkreis",
+  "name": "Bernkastel-Wittlich",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07232",
+  "typ": "Landkreis",
+  "name": "Eifelkreis Bitburg-Prüm",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07233",
+  "typ": "Landkreis",
+  "name": "Vulkaneifel",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07235",
+  "typ": "Landkreis",
+  "name": "Trier-Saarburg",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07311",
+  "typ": "Kreisfreie Stadt",
+  "name": "Frankenthal (Pfalz), kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07312",
+  "typ": "Kreisfreie Stadt",
+  "name": "Kaiserslautern, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07313",
+  "typ": "Kreisfreie Stadt",
+  "name": "Landau in der Pfalz, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07314",
+  "typ": "Kreisfreie Stadt",
+  "name": "Ludwigshafen am Rhein, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07315",
+  "typ": "Kreisfreie Stadt",
+  "name": "Mainz, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07316",
+  "typ": "Kreisfreie Stadt",
+  "name": "Neustadt an der Weinstraße, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07317",
+  "typ": "Kreisfreie Stadt",
+  "name": "Pirmasens, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07318",
+  "typ": "Kreisfreie Stadt",
+  "name": "Speyer, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07319",
+  "typ": "Kreisfreie Stadt",
+  "name": "Worms, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07320",
+  "typ": "Kreisfreie Stadt",
+  "name": "Zweibrücken, kreisfreie Stadt",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07331",
+  "typ": "Landkreis",
+  "name": "Alzey-Worms",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07332",
+  "typ": "Landkreis",
+  "name": "Bad Dürkheim",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07333",
+  "typ": "Landkreis",
+  "name": "Donnersbergkreis",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07334",
+  "typ": "Landkreis",
+  "name": "Germersheim",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07335",
+  "typ": "Landkreis",
+  "name": "Kaiserslautern",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07336",
+  "typ": "Landkreis",
+  "name": "Kusel",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07337",
+  "typ": "Landkreis",
+  "name": "Südliche Weinstraße",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07338",
+  "typ": "Landkreis",
+  "name": "Rhein-Pfalz-Kreis",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07339",
+  "typ": "Landkreis",
+  "name": "Mainz-Bingen",
+  "bundesland": "Rheinland-Pfalz"
+ },
+ {
+  "ags": "07340",
+  "typ": "Landkreis",
+  "name": "Südwestpfalz",
+  "bundesland": "Rheinland-Pfalz"
+ }
+]
