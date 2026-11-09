@@ -25,6 +25,7 @@ URLs und Ergebnisdateien gehen nach stdout, Meldungen nach stderr.
 |---|---|
 | `rlp_dl.py` | Download-URLs für **jedes** Produkt: Punkt, Rechteck, Gemeindeschlüssel (AGS), ALKIS je Gemarkung |
 | `lod2_gebiet.py` | LoD2-Gebäude auf Gemarkung, Gemeinde, Rechteck oder 1-km-Kacheln zuschneiden; AdV-Schlüssellisten als CSV |
+| `rlp_mcp.py` | derselbe Katalog als **MCP-Server** (stdio) für Claude Desktop, OpenCode & Co. — zehn Werkzeuge inkl. `download`; Einrichtung in LIESMICH.md |
 | `kreise_rlp.json` | Namen und AGS der 36 Kreise und kreisfreien Städte (für `rlp_dl.py ags`) |
 | `dop_gitter.py`, `dop_klassen.py` | DOP20 auf ein Raster schneiden und klassifizieren (braucht GDAL + numpy) |
 

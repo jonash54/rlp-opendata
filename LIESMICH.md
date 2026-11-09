@@ -10,6 +10,9 @@ ALKIS je Gemarkung, LoD2 auf ein Gebiet zuschneiden, AdV-Schlüssellisten.
   KI-Modell lesen muss.
 - `rlp_dl.py`, `lod2_gebiet.py` — Python-Skripte, nur Standardbibliothek
   (Python 3.9 oder neuer), laufen unter Linux, macOS und Windows.
+- `rlp_mcp.py` — MCP-Server (stdio): Katalogsuche und Datei-Downloads als
+  Werkzeuge für Claude Desktop, OpenCode & Co., ohne dass das Modell Shell
+  commands ausführen darf.
 - `kreise_rlp.json` — Kreisnamen und Schlüssel für `rlp_dl.py ags`.
 - `dop_gitter.py`, `dop_klassen.py` — optional, brauchen GDAL und numpy.
 
@@ -38,6 +41,40 @@ python3 lod2_gebiet.py gemarkung Alzey --klartext --zip -o ausgabe
 
 Der Abschnitt „Nur auf dem jh54-Server“ in `SKILL.md` gilt nur für einen
 bestimmten Server und kann woanders ignoriert werden.
+
+## MCP-Server (`rlp_mcp.py`)
+
+Wer das Modell nicht Shell-Befehle ausführen lassen will, hängt die Skripte als
+MCP-Server an — wieder nur Standardbibliothek, kein venv. Der Server spricht
+JSON-RPC über stdin/stdout und bietet den Katalog als zehn Werkzeuge an:
+`produkte`, `ags_suchen`, `gemarkung_suchen`, `urls_punkt`, `urls_bbox`,
+`urls_gebiet`, `alkis_url`, `datei_info`, `download` und `lod2_zuschneiden`.
+
+**OpenCode** (`~/.config/opencode/opencode.json`):
+
+```json
+{"mcp": {"rlp-opendata": {"type": "local",
+  "command": ["python3", "/pfad/zu/rlp-opendata/rlp_mcp.py"]}}}
+```
+
+**Claude Desktop** (`claude_desktop_config.json`):
+
+```json
+{"mcpServers": {"rlp-opendata": {"command": "python3",
+  "args": ["/pfad/zu/rlp-opendata/rlp_mcp.py"]}}}
+```
+
+`download` lädt in einen Ordner, prüft vorher die Gesamtgröße gegen `max_gb`
+und lässt vorhandene Dateien in Ruhe. Für sehr große Läufe (> 2000 Dateien)
+weist er auf `aria2c` mit dem Metalink hin — das ist parallel und prüft SHA-256.
+Von Hand prüfen:
+
+```bash
+printf '%s\n' \
+ '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"t","version":"1"}}}' \
+ '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
+ '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' | python3 rlp_mcp.py
+```
 
 ## Lizenz der Daten
 
