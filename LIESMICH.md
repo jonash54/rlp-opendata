@@ -50,11 +50,18 @@ JSON-RPC über stdin/stdout und bietet den Katalog als zehn Werkzeuge an:
 `produkte`, `ags_suchen`, `gemarkung_suchen`, `urls_punkt`, `urls_bbox`,
 `urls_gebiet`, `alkis_url`, `datei_info`, `download` und `lod2_zuschneiden`.
 
-**OpenCode** (`~/.config/opencode/opencode.json`):
+**OpenCode** — am bequemsten per CLI (schreibt `~/.config/opencode/opencode.json`):
+
+```sh
+opencode mcp add rlp-opendata --global -- python3 /pfad/zu/rlp-opendata/rlp_mcp.py
+```
+
+Von Hand (V2-Format, global oder als `opencode.json` im Projekt):
 
 ```json
-{"mcp": {"rlp-opendata": {"type": "local",
-  "command": ["python3", "/pfad/zu/rlp-opendata/rlp_mcp.py"]}}}
+{"$schema": "https://opencode.ai/config.json",
+ "mcp": {"servers": {"rlp-opendata": {"type": "local",
+   "command": ["python3", "/pfad/zu/rlp-opendata/rlp_mcp.py"]}}}}
 ```
 
 **Claude Desktop** (`claude_desktop_config.json`):

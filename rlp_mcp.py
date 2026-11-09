@@ -14,9 +14,10 @@ Protokoll: JSON-RPC 2.0, eine Nachricht pro Zeile über stdin/stdout
 führt ausschließlich JSON-RPC.
 
 Einrichten (Beispiele):
-  OpenCode  ~/.config/opencode/opencode.json:
-    {"mcp": {"rlp-opendata": {"type": "local",
-      "command": ["python3", "/pfad/zu/rlp_mcp.py"]}}}
+  OpenCode  (V2, global oder opencode.json im Projekt):
+    opencode mcp add rlp-opendata --global -- python3 /pfad/zu/rlp_mcp.py
+    oder von Hand: {"mcp": {"servers": {"rlp-opendata": {"type": "local",
+      "command": ["python3", "/pfad/zu/rlp_mcp.py"]}}}}
   Claude Desktop claude_desktop_config.json:
     {"mcpServers": {"rlp-opendata": {"command": "python3",
       "args": ["/pfad/zu/rlp_mcp.py"]}}}
